@@ -1,5 +1,7 @@
 ## Ultimate Thorigné Fouillard Website
 
+/docs directory is the build output. Due to github limitation only '/' and '/docs' could be defined as github page root.
+
 ## Run as dev
 
 `npm run serve`

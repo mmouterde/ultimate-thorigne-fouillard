@@ -1,15 +1,11 @@
 import {defineConfig} from 'vite'
 
 export default defineConfig({
-    build: {
-        outDir: '..',
-        rollupOptions: {
-            output: {
-                assetFileNames: '[name].[ext]',
-            }
-        },
-    },
     root: 'src',
+    build: {
+        // 'docs' directory is defined in github page settings as root. (possible values are limited to '/' and '/docs')
+        outDir: '../docs'
+    },
     server: {
         open: true,
         base: '/',
