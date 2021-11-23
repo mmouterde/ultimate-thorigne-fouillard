@@ -2,19 +2,16 @@
   "version": "2.0.0",
   "description": "Ultimate Thorigné Fouillard Webpage",
   "scripts": {
-    "build": "cross-env gulp build",
-    "serve": "cross-env gulp serve"
+    "build": "cross-env vite build",
+    "serve": "cross-env vite serve"
   },
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^10.4.0",
     "cross-env": "^7.0.3",
-    "cssnano": "^5.0.11",
-    "express": "^4.17.1",
-    "gulp": "^4.0.2",
-    "gulp-postcss": "^9.0.1",
     "prettier": "^2.4.1",
-    "tailwindcss": "^2.2.19"
+    "tailwindcss": "^2.2.19",
+    "vite": "^2.6.14"
   }
 }

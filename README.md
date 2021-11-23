@@ -1,6 +1,6 @@
 ## Ultimate Thorigné Fouillard Website
 
-/style.css is built using gulp script. Do not manually change this file.
+/docs directory is the build output. Due to github limitation only '/' and '/docs' could be defined as github page root.
 
 ## Run as dev
 
