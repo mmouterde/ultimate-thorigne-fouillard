@@ -3,6 +3,7 @@
   "description": "Ultimate Thorigné Fouillard Webpage",
   "scripts": {
     "build": "cross-env vite build",
+    "prepare": "husky install",
     "serve": "cross-env vite serve"
   },
   "license": "MIT",
@@ -10,6 +11,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.0",
     "cross-env": "^7.0.3",
+    "husky": "^7.0.4",
     "prettier": "^2.4.1",
     "tailwindcss": "^2.2.19",
     "vite": "^2.6.14"

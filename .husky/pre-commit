@@ -1,0 +1,27 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+current_tree=$(git write-tree)
+# Inspired from:
+# https://github.com/pre-commit/pre-commit/blob/84372e0edc7f5ac08361a10bcd312bc80dd20960/pre_commit/staged_files_only.py#L50
+has_changes=$(git diff-index --binary --no-color --no-ext-diff $current_tree)
+if [[ -n $has_changes ]]; then
+    git stash push --keep-index
+    echo "Stashing unstaged changes…"
+    trap 'git stash pop --quiet' EXIT
+fi
+
+npm run build >/dev/null
+
+SUCCESS=0
+# Is there an unstaged modification in docs/?
+# grep --silent exits with 1 when there are no matches, 0 otherwise.
+git status -z --porcelain docs/ | grep --silent --null-data --extended-regexp '^ M ' || SUCCESS=1
+
+if (( $SUCCESS == 0 )); then
+    # Theoretically could restore the entire tree. Out of caution, only restore
+    # the docs/ directory.
+    git restore docs/
+    echo "Unstaged modifications of the docs folders were found after build."
+    exit 1
+fi
