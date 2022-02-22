@@ -4,7 +4,8 @@ export default defineConfig({
     root: 'src',
     build: {
         // 'docs' directory is defined in github page settings as root. (possible values are limited to '/' and '/docs')
-        outDir: '../docs'
+        outDir: '../docs',
+        emptyOutDir: true
     },
     server: {
         open: true,
