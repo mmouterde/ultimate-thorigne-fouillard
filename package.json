@@ -1,17 +1,17 @@
 {
-  "version": "2.0.0",
-  "description": "Ultimate Thorigné Fouillard Webpage",
-  "scripts": {
-    "build": "cross-env vite build",
-    "serve": "cross-env vite serve"
-  },
-  "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {
-    "autoprefixer": "^10.4.0",
-    "cross-env": "^7.0.3",
-    "prettier": "^2.4.1",
-    "tailwindcss": "^2.2.19",
-    "vite": "^2.6.14"
-  }
+	"version": "2.0.0",
+	"description": "Ultimate Thorigné Fouillard Webpage",
+	"scripts": {
+		"build": "cross-env vite build",
+		"serve": "cross-env vite serve"
+	},
+	"license": "MIT",
+	"dependencies": {},
+	"devDependencies": {
+		"autoprefixer": "^10.4.0",
+		"cross-env": "^7.0.3",
+		"prettier": "^2.4.1",
+		"tailwindcss": "^2.2.19",
+		"vite": "^2.6.14"
+	}
 }

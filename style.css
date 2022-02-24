@@ -5,5 +5,5 @@
 @tailwind utilities;
 
 .endPhone::before {
-  content: "77";
+	content: "77";
 }
