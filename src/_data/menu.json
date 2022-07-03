@@ -1,0 +1,18 @@
+[
+  {
+    "path": "/",
+    "label": "Accueil"
+  },
+  {
+    "path": "/jeunes",
+    "label": "Jeunes"
+  },
+  {
+    "path": "/adultes",
+    "label": "Adultes"
+  },
+  {
+    "path": "/contact",
+    "label": "Contact"
+  }
+]
