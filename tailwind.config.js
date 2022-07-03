@@ -4,6 +4,6 @@ module.exports = {
 	plugins: [],
 	purge: {
 		enabled: true,
-		content: ["./**/*.html"]
+		content: ["./**/*.html","./**/*.njk"]
 	}
 };

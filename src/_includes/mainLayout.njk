@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+	<meta charset="utf-8"/>
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1, shrink-to-fit=no"
+	/>
+	<meta
+		name="description"
+		content="Ultimate Thorigné Fouillard est un club de Frisbee à Thorigné Fouillard, près de Rennes. Elle a pour objectif de promouvoir la pratique de l'Ultimate Frisbee en proposant évènements, initiations et entraînements réguliers. L'ensemble de l'équipe a été baptisée Les Thortles."
+	/>
+	<link
+		rel="canonical"
+		href="https://mmouterde.github.io/ultimate-thorigne-fouillard/"
+	/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png'|url }}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png'|url }}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png'|url }}">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="mask-icon" href="{{ '/safari-pinned-tab.svg'|url }}" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<title>Ultimate Thorigné Fouillard - Club d'Ultimate Frisbee</title>
+
+	<link rel="stylesheet" href="{{ '/style.css'|url }}">
+</head>
+<body>
+<header>
+	<div>
+		<div>
+			<h1>Ultimate Thorigné Fouillard</h1>
+		</div>
+		<nav>
+			<ul>
+				{% for item in menu %}
+					<li><a href="{{ item.path | url }}"
+								 class="{% if page.url === item.path or page.url === item.path+'/' %}current{% endif %}">{{ item.label }}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</nav>
+	</div>
+</header>
+<main>
+	<article>{{ content | safe }}</article>
+</main>
+<footer id="footer" class="inner">
+	<div>
+		&copy; 2022 Utimate Thorigné Fouillard - Les Thortles
+	</div>
+</footer>
+</body>
+
+</html>
