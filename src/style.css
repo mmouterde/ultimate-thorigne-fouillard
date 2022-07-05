@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /* cyrillic */
 @font-face {
     font-family: 'Montserrat';
@@ -134,9 +137,7 @@ body {
 
 h1 {
     font-weight: 600;
-    font-size: 29px;
     line-height: normal;
-    margin: 1em auto;
 }
 
 a {
@@ -203,14 +204,6 @@ header nav ul li a:hover {
     color: #626262;
 }
 
-main {
-    display: flex;
-    margin: 3em;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-grow: 1;
-}
-
 h3 {
     padding-bottom: 0.3em;
     border-bottom: #dbdbdb solid 2px;
@@ -275,4 +268,8 @@ html {
     html {
         scroll-padding-top: 100px;
     }
+}
+
+.endPhone::before {
+	content: "77";
 }
