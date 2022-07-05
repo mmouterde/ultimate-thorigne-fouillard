@@ -30,10 +30,11 @@
 <body>
 <header>
 	<div>
-		<div>
+		<div class="flex gap-2 md:gap-4 flex-col md:flex-row justify-center items-center md:items-start p-5 md:text-3xl">
+			<img src="{{ '/images/thortle_logo.svg' | url }}" style="width: 40px" alt="Logo des Thortles, une tortue vert à dos orange"/>
 			<h1>Ultimate Thorigné Fouillard</h1>
 		</div>
-		<nav>
+		<nav class="p-1">
 			<ul>
 				{% for item in menu %}
 					<li><a href="{{ item.path | url }}"
@@ -44,12 +45,12 @@
 		</nav>
 	</div>
 </header>
-<main>
+<main class="flex md:m-3 justify-center flex-wrap flex-grow">
 	<article>{{ content | safe }}</article>
 </main>
 <footer id="footer" class="inner">
 	<div>
-		&copy; 2022 Utimate Thorigné Fouillard - Les Thortles
+		&copy; 2022 Ultimate Thorigné Fouillard - Les Thortles
 	</div>
 </footer>
 </body>

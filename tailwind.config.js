@@ -2,8 +2,5 @@ module.exports = {
 	theme: {},
 	variants: {},
 	plugins: [],
-	purge: {
-		enabled: true,
-		content: ["./**/*.html","./**/*.njk"]
-	}
+	content: ["./src/**/*.html","./src/**/*.njk"]
 };
