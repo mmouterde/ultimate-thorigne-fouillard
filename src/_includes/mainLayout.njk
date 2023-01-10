@@ -28,10 +28,12 @@
 	<link rel="stylesheet" href="{{ '/style.css'|url }}">
 </head>
 <body>
-<header>
+<header class="flex flex-col md:flex-row justify-center items-center">
+	<img src="{{ '/images/tortue.svg' | url }}"
+			 style="width: 200px; margin-left: 2em; margin-top: 1em;"
+			 alt="Logo des Thortles, une tortue verte plongeant pour attraper un disque"/>
 	<div>
 		<div class="flex gap-2 md:gap-4 flex-col md:flex-row justify-center items-center md:items-start p-5 md:text-3xl">
-			<img src="{{ '/images/thortle_logo.svg' | url }}" style="width: 40px" alt="Logo des Thortles, une tortue vert à dos orange"/>
 			<h1>Ultimate Thorigné Fouillard</h1>
 		</div>
 		<nav class="p-1">
