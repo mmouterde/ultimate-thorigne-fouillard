@@ -3,6 +3,10 @@
     "path": "/",
     "label": "Accueil"
   },
+	{
+		"path": "/evenements",
+		"label": "Évenements"
+	},
   {
     "path": "/jeunes",
     "label": "Jeunes"
