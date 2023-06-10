@@ -4,7 +4,8 @@
 	"scripts": {
 		"build": "npx @11ty/eleventy --input=src --output=docs",
 		"server": "npx @11ty/eleventy --input=src --output=docs --serve",
-		"watch": "npx @11ty/eleventy --input=src --output=docs --watch"
+		"watch": "npx @11ty/eleventy --input=src --output=docs --watch",
+		"tailwind": "tailwindcss -i ./src/style.css -o ./docs/style.css --watch"
 	},
 	"license": "MIT",
 	"dependencies": {
