@@ -2,4 +2,4 @@
 
 ## Run as dev
 
-`npm run serve`
+`npm run server`

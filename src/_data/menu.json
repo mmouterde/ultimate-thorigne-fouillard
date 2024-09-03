@@ -4,12 +4,8 @@
     "label": "Accueil"
   },
   {
-    "path": "/jeunes",
-    "label": "Jeunes"
-  },
-  {
     "path": "/adultes",
-    "label": "Adultes"
+    "label": "Info-Pratiques"
   },
   {
     "path": "/contact",
