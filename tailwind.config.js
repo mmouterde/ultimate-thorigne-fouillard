@@ -3,5 +3,4 @@ module.exports = {
 	variants: {},
 	plugins: [],
 	content: ["./docs/**/*.{html,js}"],
-
 };
