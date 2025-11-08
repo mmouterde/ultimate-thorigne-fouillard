@@ -17,7 +17,7 @@ module.exports = function (eleventyConfig) {
 		{
 			outputFileExtension: "css",
 			compile: async function(inputContent, inputPath) {
-				const { stdout } = await execFile("tailwindcss", ["--input", inputPath], {timeout: 3000});
+				const { stdout } = await execFile("tailwindcss", ["--input", inputPath, "--minify"], {timeout: 3000});
 				return async () => stdout
 			},
 		}
