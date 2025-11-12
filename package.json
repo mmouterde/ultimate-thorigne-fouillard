@@ -2,9 +2,9 @@
 	"version": "2.0.0",
 	"description": "Ultimate Thorigné Fouillard Webpage",
 	"scripts": {
-		"build": "npx @11ty/eleventy --input=src",
-		"server": "npx @11ty/eleventy --input=src --serve",
-		"watch": "npx @11ty/eleventy --input=src --watch"
+		"build": "npx @11ty/eleventy --input=src --output=docs",
+		"server": "npx @11ty/eleventy --input=src --output=docs --serve",
+		"watch": "npx @11ty/eleventy --input=src --output=docs --watch"
 	},
 	"license": "MIT",
 	"devDependencies": {

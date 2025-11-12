@@ -2,5 +2,5 @@ module.exports = {
 	theme: {},
 	variants: {},
 	plugins: [],
-	content: ["./_site/**/*.{html,js}"],
+	content: ["./docs/**/*.{html,js}"],
 };
