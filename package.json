@@ -4,7 +4,8 @@
 	"scripts": {
 		"build": "npx @11ty/eleventy --input=src",
 		"server": "npx @11ty/eleventy --input=src --serve",
-		"watch": "npx @11ty/eleventy --input=src --watch"
+		"watch": "npx @11ty/eleventy --input=src --watch",
+		"lint": "npx prettier --check ."
 	},
 	"license": "MIT",
 	"devDependencies": {
