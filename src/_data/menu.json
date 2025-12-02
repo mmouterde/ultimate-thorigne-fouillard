@@ -1,14 +1,14 @@
 [
-  {
-    "path": "/",
-    "label": "Accueil"
-  },
-  {
-    "path": "/adultes",
-    "label": "Info-Pratiques"
-  },
-  {
-    "path": "/contact",
-    "label": "Contact"
-  }
+	{
+		"path": "/",
+		"label": "Accueil"
+	},
+	{
+		"path": "/adultes",
+		"label": "Info-Pratiques"
+	},
+	{
+		"path": "/contact",
+		"label": "Contact"
+	}
 ]
