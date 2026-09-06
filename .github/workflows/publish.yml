@@ -1,6 +1,6 @@
 ---
 name: Publish
-
+permissions: {}
 on:
   push:
     branches:
